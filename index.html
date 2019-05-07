@@ -26,8 +26,8 @@
         <div class="container">
           <div class="row">
             <h2>Falta avaliar</h2>
-            <div class="col s12 m6 l4 xl4">
-              <div style="max-width: 300px;" class="card">
+            <div class="col s12 m6 l4 xl4 ">
+              <div style="max-width: 300px;" class="card z-depth-4">
                 <div style="display: flex; justify-content: center" class="card-image">
                   <img style="height: 200px; width: auto" src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTU0ODUwMjQ0NjIwNzI0MDAx/chris-hemsworth-poses-during-a-photo-call-for-thor-ragnarok-on-october-15-2017-in-sydney-australia-photo-by-mark-metcalfe_getty-images-for-disney-square.jpg">
                 </div>
@@ -40,7 +40,7 @@
             </div>
 
             <div class="col s12 m6 l4 xl4">
-              <div style="max-width: 300px;" class="card">
+              <div style="max-width: 300px;" class="card z-depth-4">
                 <div style="display: flex; justify-content: center" class="card-image">
                   <img style="max-width: 200px; max-height: 200px" src="https://conteudo.imguol.com.br/c/entretenimento/39/2018/12/08/brie-larson-falou-sobre-capita-marvel-em-painel-da-ccxp-1544294946751_v2_900x506.jpg">
                 </div>
@@ -53,7 +53,7 @@
             </div>
 
             <div class="col s12 m6 l4 xl4">
-              <div style="max-width: 300px;" class="card">
+              <div style="max-width: 300px;" class="card z-depth-4">
                 <div style="display: flex; justify-content: center" class="card-image">
                   <img style="height: 200px; width: auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Paul_Rudd_%28cropped%29_2.jpg/225px-Paul_Rudd_%28cropped%29_2.jpg">
                 </div>
@@ -68,7 +68,7 @@
           <div class="row">
               <h2>Já avaliados</h2>
               <div class="col s12 m6 l4 xl4">
-                  <div style="max-width: 300px;" class="card">
+                  <div style="max-width: 300px;" class="card z-depth-4">
                     <div style="display: flex; justify-content: center" class="card-image">
                       <img style="height: 200px; width: auto" src="https://www.cheatsheet.com/wp-content/uploads/2019/04/Robert-Downey-Jr.-3.jpg">
                     </div>
@@ -78,20 +78,19 @@
                   </div>
                 </div>
           </div>
-          <div id="modal1" class="modal">
+          <div id="modal1" class="modal z-depth-4">
               <div class="modal-content">
                 <h4>Avaliando</h4>
                 <div class="container">
                   <div class="row">
         
-                    <div class="col s12 m6 l4 xl12">
+                    <div class="col s12 ">
                       
                      <blockquote>
                       Como você avalia a qualidade?
                     </blockquote>   
         
-                    <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">
-                                          
+                    <div style="display: flex; justify-content: space-around; width: 200px; margin: auto;">          
                         <label>
                         <input name="group1" type="radio"/> 
                         <span><i class="material-icons" title="Muito Insatisfeito">sentiment_very_dissatisfied</i></span>                     
@@ -120,7 +119,7 @@
                     </div>
                   </div>
         
-                  <div class="col s12 m6 l4 xl12">
+                  <div class="col s12 ">
         
                       
                       <blockquote>
@@ -157,7 +156,7 @@
                      </div>
                    </div>
         
-                   <div class="col s12 m6 l4 xl12">
+                   <div class="col s12 ">
         
                       
                       <blockquote>
@@ -194,7 +193,7 @@
                      </div>
                    </div>
         
-                   <div class="col s12 m6 l4 xl12">
+                   <div class="col s12 ">
         
                       
                       <blockquote>
@@ -259,6 +258,11 @@
           document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.modal');
             var instances = M.Modal.init(elems);
+          });
+
+          document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems, options);
           });
 
       </script>
